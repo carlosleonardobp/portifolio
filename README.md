@@ -1,4 +1,10 @@
-# Olá, Bem vindo ao meu projeto de portfólio.
+<span align="center">
+
+# Olá, Bem vindo ao meu projeto de portfólio. 👋 
+
+</span>
+
+
 
 
 | Web Home | Web About me |
