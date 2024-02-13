@@ -97,7 +97,7 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     cursor: pointer;
     background-color: var(--cor-hover);
 }
