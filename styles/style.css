@@ -148,6 +148,7 @@ body {
 }
 
 .img-projeto {
+  border-radius: 0.625rem;
   width: 30rem;
   height: auto;
 }
