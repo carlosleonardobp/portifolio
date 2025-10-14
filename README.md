@@ -18,4 +18,4 @@
 
 ### Carlos Leonardo
 
-### [Linkedin:](https://www.linkedin.com/in/carlos-leonardo-bp/)
+### [Linkedin](https://www.linkedin.com/in/carlos-leonardo-bp/)
