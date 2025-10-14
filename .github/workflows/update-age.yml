@@ -11,16 +11,26 @@ jobs:
     steps:
       - name: Clonar repositório
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Calcular nova idade e atualizar Portfólio
         run: |
           #!/bin/bash
           DATA_NASC="1996-07-25"
           HOJE=$(date +%Y-%m-%d)
-          IDADE=$(($(date -d "$HOJE" +%Y) - $(date -d "$DATA_NASC" +%Y)))
-          if [[ "$(date -d "$HOJE" +%m%d)" -lt "0725" ]]; then
+
+          ANO_ATUAL=$(date -d "$HOJE" +%Y)
+          MES_DIA_ATUAL=$(date -d "$HOJE" +%m%d)
+          ANO_NASC=$(date -d "$DATA_NASC" +%Y)
+          MES_DIA_NASC=$(date -d "$DATA_NASC" +%m%d)
+
+          IDADE=$((ANO_ATUAL - ANO_NASC))
+          if [[ "$MES_DIA_ATUAL" -lt "$MES_DIA_NASC" ]]; then
             IDADE=$((IDADE - 1))
           fi
+
+          echo "Idade calculada: $IDADE"
 
           sed -i "s/<!-- idade -->.*<!-- \/idade -->/<!-- idade -->$IDADE<!-- \/idade -->/" about.html
 
@@ -28,6 +38,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add README.md
+          git add about.html
           git commit -m "Atualiza idade automaticamente" || exit 0
           git push
