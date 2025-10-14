@@ -1,4 +1,4 @@
-name: Atualizar idade
+name: Atualizar Idade Portfólio
 
 on:
   schedule:
@@ -12,7 +12,7 @@ jobs:
       - name: Clonar repositório
         uses: actions/checkout@v3
 
-      - name: Calcular nova idade e atualizar README
+      - name: Calcular nova idade e atualizar Portfólio
         run: |
           #!/bin/bash
           DATA_NASC="1996-07-25"
@@ -22,7 +22,7 @@ jobs:
             IDADE=$((IDADE - 1))
           fi
 
-          sed -i "s/<!-- idade -->.*<!-- \/idade -->/<!-- idade -->$IDADE<!-- \/idade -->/" README.md
+          sed -i "s/<!-- idade -->.*<!-- \/idade -->/<!-- idade -->$IDADE<!-- \/idade -->/" about.html
 
       - name: Commit e push se houver alterações
         run: |
