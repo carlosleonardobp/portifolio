@@ -157,7 +157,7 @@ body {
 .rodape,
 .rodape-projetos {
   padding: 24px;
-  color: var(--cor-segundaria);
+  color: var(--cor-quaternaria);
   background-color: var(--cor-terciaria);
   text-align: center;
   font-family: var(--fonte-secundaria);
@@ -189,4 +189,5 @@ body {
     width: auto;
   }
 }
+
 
