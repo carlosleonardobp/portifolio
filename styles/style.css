@@ -4,6 +4,7 @@
   --cor-primaria: #110f0e;
   --cor-segundaria: #ffffff;
   --cor-terciaria: #f5ba13;
+  --cor-quaternaria: #000000;
   --cor-hover: #091225;
 
   --fonte-primaria: "Krona One", sans-serif;
@@ -188,3 +189,4 @@ body {
     width: auto;
   }
 }
+
