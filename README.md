@@ -1,21 +1,21 @@
 <span align="center">
 
-# Olá, Bem vindo ao meu projeto de portfólio. 👋 
+# Olá, Bem vindo ao meu projeto de portfólio. 👋
 
 </span>
 
 ## Ferramentas utilizadas:
 
-* HTML
+- HTML
 
-* CSS
+- CSS
 
-* Flex-box
+- Flex-box
 
-* Font Awesome
+- Font Awesome
 
 ## Feito por:
 
 ### Carlos Leonardo
 
-### [Linkedin](https://www.linkedin.com/in/carlos-leonardo-bp/)
+### [Linkedin](https://www.linkedin.com/in/carlosleonardobp/)
